@@ -1052,7 +1052,7 @@ async def help3(ctx):
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
             
-@client.command(pass_context=True)
+@client.command(pass_context= True)
 @commands.has_permissions(administrator=True)
 async def poll(ctx, question, *options: str):
         if len(options) <= 1:
@@ -1078,7 +1078,7 @@ async def poll(ctx, question, *options: str):
         embed.set_footer(text='Poll ID: {}'.format(react_message.id))
         await client.edit_message(react_message, embed=embed) 
     
-@client.command(pass_context=True)
+@client.command(pass_context= True)
 async def ownerinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Main Creator: DP♡#1471", color=0x00ff00)
     embed.set_author(name=" Bot Owner ""DP♡#1471")
