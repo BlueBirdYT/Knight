@@ -1052,7 +1052,7 @@ async def help3(ctx):
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
             
- @client.command(pass_context=True)
+@client.command(pass_context=True)
 @commands.has_permissions(administrator=True)
 async def poll(ctx, question, *options: str):
         if len(options) <= 1:
