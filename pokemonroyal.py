@@ -32,7 +32,7 @@ async def status_task():
         await asyncio.sleep(20)
         await client.change_presence(game=discord.Game(name=str(len(client.servers))+' servers', type=3))
         await asyncio.sleep(20)
-        await client.change_presence(game=discord.Game(name="Streaming music", url=" https://twitch.tv/gamingwithgalaxygamer", type=1))`
+        await client.change_presence(game=discord.Game(name="Streaming music", url=" https://twitch.tv/gamingwithgalaxygamer", type=3))
         await asyncio.sleep(20)
 
         
