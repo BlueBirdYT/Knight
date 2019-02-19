@@ -28,13 +28,13 @@ async def status_task():
         await asyncio.sleep(2)
         await client.change_presence(game=discord.Game(name='for *help3', type=2))
         await asyncio.sleep(2)
+        await client.change_presence(game=discord.Game(name="Streaming music", url=" https://twitch.tv/gamingwithgalaxygamer", type=2))
+        await asyncio.sleep(2)
         await client.change_presence(game=discord.Game(name=str(len(set(client.get_all_members())))+' users', type=3))
         await asyncio.sleep(2)
         await client.change_presence(game=discord.Game(name=str(len(client.servers))+' servers', type=3))
         await asyncio.sleep(2)
-        await client.change_presence(game=discord.Game(name="Streaming music", url=" https://twitch.tv/gamingwithgalaxygamer", type=3))
-        await asyncio.sleep(2)
-
+       
         
         
 @client.event
