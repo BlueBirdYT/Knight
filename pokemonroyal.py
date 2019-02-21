@@ -1091,10 +1091,9 @@ async def poll(ctx, question, *options: str):
         await client.edit_message(react_message, embed=embed) 
     
 @client.command(pass_context= True)
-async def ownerinfo(ctx):
+async def botinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Main Creator: DP♡#1471", color=0x00ff00)
     embed.set_author(name=" Bot Owner ""DP♡#1471")
-    embed.add_field(name="Co-owner: BlueBird ❄ Froakie collector#0440", value="He coded the bot")
     await client.say(embed=embed)
 
            
