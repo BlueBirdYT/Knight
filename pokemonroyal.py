@@ -1097,7 +1097,7 @@ async def botinfo(ctx):
     embed.set_author(name=" Bot Owner ""DP♡#1471")
     await client.say(embed=embed)
 
- @client.command(pass_context= True)
+@client.command(pass_context= True)
 async def server(ctx):
     await client.say('Link to the official bot support https://discord.gg/QVR3fsY')
             
