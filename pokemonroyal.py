@@ -1061,6 +1061,7 @@ async def help3(ctx):
     embed.add_field(name = 'pause', value ='pause the song',inline = False)
     embed.add_field(name = 'resume', value ='resume the song',inline = False)
     embed.add_field(name = 'skip', value ='skip the current song',inline = False)
+    embed.add_field(name = 'server', value ='link to the support server',inline = False)
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
             
@@ -1096,7 +1097,9 @@ async def botinfo(ctx):
     embed.set_author(name=" Bot Owner ""DP♡#1471")
     await client.say(embed=embed)
 
-           
+ @client.command(pass_context= True)
+async def server(ctx):
+    await client.say('Link to the official bot support https://discord.gg/QVR3fsY')
             
             
             
