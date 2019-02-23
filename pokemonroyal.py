@@ -531,19 +531,7 @@ async def access(ctx, member: discord.Member=None):
 
             
 
-@client.command(pass_context = True)
-@commands.has_permissions(administrator=True)
-async def setpartner(ctx):
-    if ctx.message.author.bot:
-      return
-    if ctx.message.author.server_permissions.administrator == False:
-      await client.say('**You do not have permission to use this command**')
-      return
-    else:
-      server = ctx.message.server
-      everyone_perms = discord.PermissionOverwrite(send_messages=False, read_messages=True)
-      everyone = discord.ChannelPermissions(target=server.default_role, overwrite=everyone_perms)
-      await client.create_channel(server, 'server-partner',everyone)
+
 
 @client.command(pass_context = True)
 async def addrole(ctx,*, role:str=None):
@@ -991,7 +979,6 @@ async def help2(ctx):
     embed.set_author(name='Help2')
     embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')    
     embed.add_field(name = 'access', value ='acces a member',inline = False)
-    embed.add_field(name = 'setpartner', value ='setup partner',inline = False)
     embed.add_field(name = 'addrole', value ='create a role',inline = False)
     embed.add_field(name = 'delrole', value ='delete a role',inline = False)
     embed.add_field(name = 'setnick', value ='set a nickname for a user',inline = False)
