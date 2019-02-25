@@ -134,17 +134,7 @@ async def unlock(ctx, channelname: discord.Channel=None):
             await client.edit_channel_permissions(channelname, role, overwrite)
             await client.say("Channel unlocked by: {}".format(ctx.message.author))
 
-@client.command(pass_context = True)
-async def dm(ctx, user: discord.Member, *, msg: str):
-   if user is None or msg is None:
-       await client.say('Invalid args. Use this command like: ``*dm @user message``')
-   if ctx.message.author.server_permissions.kick_members == False:
-       await client.say('**You do not have permission to use this command**')
-       return
-   else:
-       await client.send_message(user, msg)
-       await client.delete_message(ctx.message)
-       await client.say("Success! Your DM has made it! :white_check_mark: ")
+
 
 @client.command(pass_context = True)
 async def setw(ctx):
@@ -944,7 +934,6 @@ async def help(ctx):
     embed.add_field(name = 'servers ',value ='command for only the devs of the bot',inline = False)
     embed.add_field(name = 'lock',value ='lock channels',inline = False)
     embed.add_field(name = 'unlock',value ='unlock channels',inline = False)
-    embed.add_field(name = 'dm',value ='bot dm a users but administrator needed',inline = False)
     embed.add_field(name = 'setw',value ='setup welcomer',inline = False)
     embed.add_field(name = 'setuplog',value ='setup log channel',inline = False)
     embed.add_field(name = 'getuser',value ='check which role a user has',inline = False)
