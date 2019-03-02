@@ -1001,6 +1001,7 @@ async def help3(ctx):
     embed.add_field(name = 'resume', value ='resume the song',inline = False)
     embed.add_field(name = 'skip', value ='skip the current song',inline = False)
     embed.add_field(name = 'server', value ='link to the support server',inline = False)
+    embed.add_field(name = 'upvote', value ='link yo upvote me',inline = False)
     await client.send_message(author,embed=embed)
     await client.say('📨 Check DMs For Information')
             
@@ -1041,7 +1042,9 @@ async def server(ctx):
     await client.say('Link to the official bot support https://discord.gg/8yd37Fj')
             
             
-            
+@client.command(pass_context= True)
+async def upvote(ctx):
+    await client.say('link to upvote me https://discordbots.org/bot/545979318875062290/vote')
             
 
 client.run(os.getenv('Token'))
