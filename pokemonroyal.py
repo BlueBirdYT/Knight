@@ -1011,7 +1011,7 @@ async def help(ctx):
       embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
       embed.set_author(name='My prefix is * and here are the help information!')
       embed.set_image(url = 'https://image.ibb.co/caM2BK/help.gif')
-      embed.add_field(name = 'Having doubts? Join our server and clear your doubts. Server link:',value ='https://discord.gg/ZyTwScu',inline = False)
+      embed.add_field(name = 'Having doubts? Join our server and clear your doubts. Server link:',value =' https://discord.gg/8yd37Fj',inline = False)
       embed.add_field(name = 'React with 🇲 ',value ='click it to see the commands',inline = False)
       embed.add_field(name = 'React with 🇬 ',value ='click it to see the rest of the commands',inline = False)
       embed.add_field(name = 'React with 🎦 ',value ='click it to see the rest of the commands',inline = False)
