@@ -1038,7 +1038,7 @@ async def botinfo(ctx):
 
 @client.command(pass_context= True)
 async def server(ctx):
-    await client.say('Link to the official bot support https://discord.gg/QVR3fsY')
+    await client.say('Link to the official bot support https://discord.gg/8yd37Fj')
             
             
             
