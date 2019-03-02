@@ -126,6 +126,7 @@ async def on_reaction_add(reaction, user):
            embed.add_field(name = '*pause', value ='use it like *pause',inline = False)
            embed.add_field(name = '*resume', value ='use it like *resume',inline = False)
            embed.add_field(name = '*skip', value ='use it like *skip to skip the current song',inline = False)
+           embed.add_field(name = 'upvote' value ='use it like *upvote',inline = False)
            await client.send_message(user,embed=embed)     
     
     
@@ -1003,6 +1004,7 @@ async def help(ctx):
       embed.add_field(name = 'React with 🇲 ',value ='click it to see the commands',inline = False)
       embed.add_field(name = 'React with 🇬 ',value ='click it to see the rest of the commands',inline = False)
       embed.add_field(name = 'React with 🎦 ',value ='click it to see the rest of the commands',inline = False)
+      embed.add_field(name = 'Pls upvote our bot :)', value ='https://discordbots.org/bot/545979318875062290/vote',inline = False)
       dmmessage = await client.send_message(author,embed=embed)
       reaction1 = '🇲'
       reaction2 = '🇬'
