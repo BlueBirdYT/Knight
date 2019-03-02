@@ -126,7 +126,7 @@ async def on_reaction_add(reaction, user):
            embed.add_field(name = '*pause', value ='use it like *pause',inline = False)
            embed.add_field(name = '*resume', value ='use it like *resume',inline = False)
            embed.add_field(name = '*skip', value ='use it like *skip to skip the current song',inline = False)
-           embed.add_field(name = 'upvote' value ='use it like *upvote',inline = False)
+           embed.add_field(name = 'upvote', value ='use it like *upvote',inline = False)
            await client.send_message(user,embed=embed)     
     
     
