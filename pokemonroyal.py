@@ -1057,6 +1057,7 @@ async def upvote(ctx):
             
 @client.event
 async def on_message(message):
+    await client.process_commands(message)
     user = message.author
     if message.author.bot:
       return
