@@ -1058,10 +1058,7 @@ async def upvote(ctx):
 @client.event
 async def on_message(message):
     await client.process_commands(message)
-    user = message.author
-    if message.author.bot:
-      return
-      if 'fuck' in message.content:
+    if 'fuck' in message.content:
           msg = 'Do not use bad words {0.author.name}'.format(message)
           msg2 = await client.send_message(message.channel, msg)
           await client.delete_message(message)
