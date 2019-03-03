@@ -1058,13 +1058,13 @@ async def upvote(ctx):
 @client.event
 async def on_message(message):
     await client.process_commands(message)
-      if 'fuck' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'fuck' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1075,14 +1075,13 @@ async def on_message(message):
                 embed.add_field(name = 'Channel:',value ='{}'.format(message.channel.name),inline = False)
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
-      
-      if 'FUCK' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'FUCK' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1095,13 +1094,13 @@ async def on_message(message):
                 await client.send_message(channel, embed=embed)
                 
       
-      if 'utiya' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'utiya' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1112,13 +1111,13 @@ async def on_message(message):
                 embed.add_field(name = 'Channel:',value ='{}'.format(message.channel.name),inline = False)
                 await client.send_message(channel, embed=embed)
         
-      if 'asshole' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'asshole' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1130,13 +1129,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
         
-      if 'ASSHOLE' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'ASSHOLE' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1148,13 +1147,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
                 
-      if 'Fuck' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'Fuck' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1166,13 +1165,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
         
-      if 'chut' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'chut' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1184,13 +1183,13 @@ async def on_message(message):
                 embed.add_field(name = 'Channel:',value ='{}'.format(message.channel.name),inline = False)
                 await client.send_message(channel, embed=embed)
         
-      if 'chod' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'chod' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1202,13 +1201,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
         
-      if 'Chod' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'Chod' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1220,13 +1219,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
        
-      if 'bsdk' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'bsdk' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1238,13 +1237,13 @@ async def on_message(message):
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
        
-      if 'bhosd' in message.content:
-          msg = 'Do not use bad words {0.author.name}'.format(message)
-          msg2 = await client.send_message(message.channel, msg)
-          await client.delete_message(message)
-          await asyncio.sleep(5)
-          await client.delete_message(msg2)
-          for channel in user.server.channels:
+    if 'bhosd' in message.content:
+        msg = 'Do not use bad words {0.author.name}'.format(message)
+        msg2 = await client.send_message(message.channel, msg)
+        await client.delete_message(message)
+        await asyncio.sleep(5)
+        await client.delete_message(msg2)
+        for channel in user.server.channels:
             if channel.name == 'server-log':
                 r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
                 embed = discord.Embed(color = discord.Color((r << 16) + (g << 8) + b))
@@ -1255,6 +1254,7 @@ async def on_message(message):
                 embed.add_field(name = 'Channel:',value ='{}'.format(message.channel.name),inline = False)
                 embed.add_field(name = 'Message:',value ='{}'.format(message.content),inline = False)
                 await client.send_message(channel, embed=embed)
+     
         
         
         
