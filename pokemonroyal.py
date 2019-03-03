@@ -1256,7 +1256,16 @@ async def on_message(message):
                 await client.send_message(channel, embed=embed)
      
         
-        
+global url, dbltoken , headers
+
+client = discord.AutoShardedClient()
+
+@client.event
+async def on_ready():
+    global url,dbltoken,headers
+    dbltoken = "DBL TOKEN"
+    url = "https://discordbots.org/api/bots/" + str(client.user.id) + "/stats"
+    headers = {"Authorization" : dbltoken}        
         
         
         
