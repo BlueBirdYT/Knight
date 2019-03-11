@@ -77,6 +77,7 @@ async def on_reaction_add(reaction, user):
             embed.add_field(name = '*avatar', value ='use it like *avatar or *avatar @user',inline = False)
             embed.add_field(name = '*flipcoin', value ='use it like *flipcoin',inline = False)
             embed.add_field(name = '*unmute (mod or admin is required)', value ='use it like *unmute @user',inline = False)
+            embed.add_field(name = '*rank', value ='use it like n!ran',inline = False)
             await client.send_message(user,embed=embed)
      if reaction.emoji == '🇲':
            r, g, b = tuple(int(x * 255) for x in colorsys.hsv_to_rgb(random.random(), 1, 1))
