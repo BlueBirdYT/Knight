@@ -6,6 +6,7 @@ import time
 import colorsys
 import aiohttp
 import random
+import json
 import os
 import datetime
 from discord import Game, Embed, Color, Status, ChannelType
