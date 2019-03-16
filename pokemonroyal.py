@@ -21,16 +21,7 @@ client.remove_command('help')
 GIPHY_API_KEY = "dc6zaTOxFJmzC"
 
 
-async def status_task():
-    while True:
-        await client.change_presence(game=discord.Game(name='to *help', type=2))
-        await asyncio.sleep(5) 
-        await client.change_presence(game=discord.Game(name='created by DP♡#1471'))
-        await asyncio.sleep(4)
-        await client.change_presence(game=discord.Game(name=str(len(set(client.get_all_members())))+' users', type=3))
-        await asyncio.sleep(4)
-        await client.change_presence(game=discord.Game(name=str(len(client.servers))+' servers', type=3))
-        await asyncio.sleep(4)
+
        
         
         
@@ -40,7 +31,6 @@ async def on_ready():
      print('the bot is ready')
      print('.......')
      print('created by dp and bluebird')
-     client.loop.create_task(status_task())
 
 def is_owner(ctx):
      return ctx.message.author.id in ["455322915471097857","429301779981795338"]
