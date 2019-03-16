@@ -1326,7 +1326,7 @@ def get_xp(user_id: int):
         
 @client.command(pass_context=True)
 @commands.check(is_owner)
-async def setgame(ctx,types:str,*,game:str):
+async def gameset(ctx,types:str,*,game:str):
     rep = {"listening": "2", "watching": "3", "streaming": "1", "playing": "0"} # define desired replacements here
     rep = dict((re.escape(k), v) for k, v in rep.iteritems())
     pattern = re.compile("|".join(rep.keys()))
