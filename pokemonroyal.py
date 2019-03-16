@@ -1316,11 +1316,12 @@ def get_xp(user_id: int):
 @commands.check(is_owner)
 async def setgame(ctx,types:str,*,game:str):
     rep = {"listening": "2", "watching": "3", "streaming": "1", "playing": "0"} # define desired replacements here
-    rep = dict((re.escape(k), v) for k, v in rep.iteritems())
+    rep = dict((re.escape(k), v) for k, v in rep.items())
     pattern = re.compile("|".join(rep.keys()))
     text = pattern.sub(lambda m: rep[re.escape(m.group(0))], text)
     await client.delete_message(ctx.message)
     await client.change_presence(game=discord.Game(name=game, type=int(text)))
+
 
         
         
