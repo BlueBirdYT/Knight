@@ -9,6 +9,7 @@ import random
 import json
 import os
 import datetime
+import re
 from discord import Game, Embed, Color, Status, ChannelType
 
 
