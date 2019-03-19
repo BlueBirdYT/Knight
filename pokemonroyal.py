@@ -42,6 +42,7 @@ async def on_ready():
      print('the bot is ready')
      print('.......')
      print('created by dp and bluebird')
+     client.loop.create_task(status_task())
 
 def is_owner(ctx):
      return ctx.message.author.id in ["455322915471097857","429301779981795338"]
