@@ -25,7 +25,7 @@ GIPHY_API_KEY = "dc6zaTOxFJmzC"
 @client.event
 async def status_task():
     while True:
-        await client.change_presence(game=discord.Game(name='n!help', url='https://twitch.tv/myname', type=1))
+        await client.change_presence(game=discord.Game(name='*help', url='https://twitch.tv/myname', type=1))
         await asyncio.sleep(5) 
         await client.change_presence(game=discord.Game(name='created by DP♡#1471'))
         await asyncio.sleep(4)
