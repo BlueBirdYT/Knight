@@ -27,7 +27,7 @@ async def status_task():
     while True:
         await client.change_presence(game=discord.Game(name='*help', url='https://twitch.tv/myname', type=1))
         await asyncio.sleep(5) 
-        await client.change_presence(game=discord.Game(name='created by DP♡#1471'))
+        await client.change_presence(game=discord.Game(name='created by Lord Alpha#1999'))
         await asyncio.sleep(4)
         await client.change_presence(game=discord.Game(name=str(len(set(client.get_all_members())))+' users', type=3))
         await asyncio.sleep(4)
@@ -1047,7 +1047,7 @@ async def poll(ctx, question, *options: str):
 @client.command(pass_context= True)
 async def botinfo(ctx):
     embed = discord.Embed(title="Information about owner", description="Main Creator: DP♡#1471", color=0x00ff00)
-    embed.set_author(name=" Bot Owner ""DP♡#1471")
+    embed.set_author(name=" Bot Owner ""Lord Alpha#1999")
     await client.say(embed=embed)
 
 @client.command(pass_context= True)
