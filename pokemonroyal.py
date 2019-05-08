@@ -191,7 +191,7 @@ async def lock(ctx, channelname: discord.channel=None):
             await client.edit_channel_permissions(channelname, role, overwrite)
             await client.say("Channel locked by: {}".format(ctx.message.author))
 @client.command(pass_context = True)
-async def unlock(ctx, channelname: discord.Channel=None):
+async def unlock(ctx, channelname: discord.channel=None):
     overwrite = discord.PermissionOverwrite(send_messages=None, read_messages=True)
     if not channelname:
         if ctx.message.author.server_permissions.kick_members == False:
