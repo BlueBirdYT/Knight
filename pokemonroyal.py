@@ -442,7 +442,7 @@ async def announce(ctx, channel: discord.channel=None, *, msg: str=None):
             await client.send_message(channel, embed=embed)
             await client.delete_message(ctx.message)
 @client.command(pass_context = True)
-async def delchannel(ctx, channel: discord.Channel=None):
+async def delchannel(ctx, channel: discord.channel=None):
     if channel is None:
         await client.delete_channel(ctx.message.channel)
         await client.send_message(ctx.message.author, "{} channel has been deleted in {}".format(ctx.message.channel.name, ctx.message.server.name))
