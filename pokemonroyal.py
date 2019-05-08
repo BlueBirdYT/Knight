@@ -176,7 +176,7 @@ async def servers(ctx):
 
 
 @client.command(pass_context = True)
-async def lock(ctx, channelname: discord.Channel=None):
+async def lock(ctx, channelname: discord.channel=None):
     overwrite = discord.PermissionOverwrite(send_messages=False, read_messages=True)
     if not channelname:
         role = discord.utils.get(ctx.message.server.roles, name='@everyone')
