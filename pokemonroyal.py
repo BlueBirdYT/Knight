@@ -427,7 +427,7 @@ async def tweet(ctx, usernamename:str, *, txt:str):
             await client.say(embed=embed)
 
 @client.command(pass_context = True)
-async def announce(ctx, channel: discord.Channel=None, *, msg: str=None):
+async def announce(ctx, channel: discord.channel=None, *, msg: str=None):
     member = ctx.message.author
     if channel is None or msg is None:
         await client.say('Invalid args. Use this command like ``c!announce #channel text here``')
